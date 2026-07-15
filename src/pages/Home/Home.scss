@@ -1,3 +1,13 @@
 .home {
   padding: 20px 0;
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    padding: 50px;
+    margin-top: 20px;
+  }
 }
