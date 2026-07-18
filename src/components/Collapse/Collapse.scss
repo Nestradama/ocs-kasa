@@ -1,0 +1,47 @@
+.collapse {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FF6060;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__arrow {
+    transition: transform 0.3s ease;
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #F7F7F7;
+    border-radius: 0 0 5px 5px;
+
+    &--open {
+      max-height: 500px;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    font-size: 18px;
+    color: #FF6060;
+  }
+}

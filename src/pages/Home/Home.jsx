@@ -1,4 +1,4 @@
-import { useState } from 'react';  // Plus besoin d'importer useEffect
+import { useState } from 'react';
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import housesData from '../../backend/mockBackend.json';

@@ -5,14 +5,18 @@
   align-items: center;
   height: 223px;
   border-radius: 25px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/banner.png');
   background-position: center;
   background-size: cover;
   margin: 20px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/banner.png');
 
   &__text {
     color: white;
     font-size: 48px;
     font-weight: 700;
+  }
+
+  &--about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/banner-about.png');
   }
 }
