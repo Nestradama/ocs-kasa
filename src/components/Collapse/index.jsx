@@ -1,1 +1,1 @@
-import {default} from "./Collapse.jsx"
+export { default } from './Collapse'
