@@ -12,11 +12,20 @@
     cursor: pointer;
     font-size: 24px;
     font-weight: 500;
+
+    @media (max-width: 550px) {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
   }
 
   &__title {
     font-size: 24px;
     font-weight: 500;
+
+    @media (max-width: 550px) {
+      font-size: 16px;
+    }
   }
 
   &__arrow {
@@ -43,5 +52,10 @@
     padding: 20px;
     font-size: 18px;
     color: #000000;
+
+    @media (max-width: 550px) {
+      font-size: 14px;
+      padding: 12px;
+    }
   }
 }

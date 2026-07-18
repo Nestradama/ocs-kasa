@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <div className="home">
-            <Banner text="Chez vous, partout et ailleurs" />
+            <Banner text={"Chez vous,\npartout et ailleurs"} />
             <div className="home__gallery">
                 {houses.map(house => (
                     <Card key={house.id} {...house} />

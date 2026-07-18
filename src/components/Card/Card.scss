@@ -6,6 +6,10 @@
   text-decoration: none;
   cursor: pointer;
 
+  @media (max-width: 550px) {
+    height: 220px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -40,5 +44,11 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
+
+    @media (max-width: 550px) {
+      font-size: 14px;
+      bottom: 10px;
+      left: 10px;
+    }
   }
 }

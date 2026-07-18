@@ -6,6 +6,10 @@
     font-size: 24px;
     color: #E3E3E3;
 
+    @media (max-width: 550px) {
+      font-size: 16px;
+    }
+
     &--filled {
       color: #FF6060;
     }
