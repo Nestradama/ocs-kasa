@@ -1,0 +1,48 @@
+.housing {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
+
+  &__left {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+  }
+
+  &__location {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  &__collapses {
+    display: flex;
+    gap: 50px;
+    margin: 20px 0;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
