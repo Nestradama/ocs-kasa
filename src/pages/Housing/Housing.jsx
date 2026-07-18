@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Carousel from '../../components/Carousel';
 import HostInfo from '../../components/HostInfo';
 import Rating from '../../components/Rating';
@@ -12,10 +12,16 @@ export default function Housing() {
     const house = housesData.find(h => h.id === id);
 
     if (!house) {
-        return <p>Logement introuvable</p>;
+        return <Navigate to="/404" replace />;
     }
 
-    const equipmentsList = house.equipments.join('\n');
+    const equipmentsList = (
+        <ul style={{ listStyle: 'none', padding: 0 }}>
+            {house.equipments.map(item => (
+                <li key={item}>{item}</li>
+            ))}
+        </ul>
+    );
 
     return (
         <div className="housing">

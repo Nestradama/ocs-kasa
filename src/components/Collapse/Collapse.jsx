@@ -13,7 +13,7 @@ export default function Collapse({ title, content }) {
                 </span>
             </button>
             <div className={`collapse__body${isOpen ? ' collapse__body--open' : ''}`}>
-                <p className="collapse__content">{content}</p>
+                <div className="collapse__content">{content}</div>
             </div>
         </div>
     );
