@@ -1,0 +1,23 @@
+.error404 {
+  text-align: center;
+  padding: 60px 20px;
+
+  &__number {
+    font-size: 288px;
+    font-weight: 700;
+    color: #FF6060;
+    line-height: 1;
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    margin: 20px 0 80px;
+  }
+
+  &__link {
+    font-size: 18px;
+    color: #FF6060;
+  }
+}
